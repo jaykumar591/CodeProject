@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume-11</title>
+    <style>
+        body{
+            background: black;
+        }
+        *{
+            padding: 0;margin: 0;
+        }
+        .mainbox{
+            width: 900px;
+            height: 1600px;
+            overflow: auto;
+            background-color: white;
+            border: 2px solid black;
+            margin: auto;
+            padding: 1px 20px;
+            
+        }
+        .heading{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex;
+            flex-direction: column;text-align: center;
+            margin: auto;
+            width: 900px;
+            height: 150px;
+            background: gray;
+        }
+        td{
+            padding: 5px;
+            border: 2px solid black;
+            background: white;
+        }
+        table{
+            border: 2px solid black;
+            background:linear-gradient(red , blue,orange);
+        }
+        .btn{
+            position: fixed;
+            top: 550px;
+            right: 50px;
+            border-radius: 20px;
+            background-color: transparent;
+        }
+        .button{
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+            font-size: 40px;
+            color: white;
+            background: #000;
+            font-family: bold;
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            border-radius: 20px;
+            
+        }
+        .button:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <div class="heading">
+            <h1 id="name">Name jay anuj kumar singh rajput</h1>
+            <p id="gmail">gmail jay kumavgdfgdhkghdkjdjghdkj</p>
+            <p id="address">adress of your villege nd state and district and other address</p>
+        </div>
+        <div class="summary">
+            <h1><li>SUMMARY</li></h1>
+            <summary id="sumary">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sunt quos cumque sit sed quibusdam excepturi facilis omnis iure! Veniam asperiores veritatis illo reprehenderit itaque odio debitis vitae eveniet at?
+                Iste labore veniam dolorum laboriosam! Voluptate labore nulla, tempora id exercitationem velit ut! Nam, itaque! Omnis, nobis a explicabo incidunt itaque soluta qui hic odit quam, dolore voluptas, corrupti exercitationem.
+            </summary>
+        </div>
+        <div class="education">
+            <h1><li>EDUCATION</li></h1>
+            <table>
+                <tr>
+                    <td>Schoole/College Nane</td>
+                    <td>Parcentage / CGPA</td>
+                    <td>Passing Year</td>
+                    <td>Board Name</td>
+                    <td>Standard(class)</td>
+                </tr>
+                <tr>
+                    <td id="schoolName">High School Dindyalpur</td>
+                    <td id="marks">64.5%</td>
+                    <td id="year">2020</td>
+                    <td id="boardName">Bihar School Examination Board,Patna</td>
+                    <td>10th class</td>
+                </tr>
+                <tr >
+                    <td id="collegeName">Inter college Dindyalpur</td>
+                    <td id="marks1">64%</td>
+                    <td id="year1">2022</td>
+                    <td id="boardName1">Bihar School Examination Board,Patna</td>
+                    <td>12th class</td>
+                </tr>
+              </table>
+        </div>
+        <div class="skill">
+            <h1><li>SKILL</li></h1>
+            <p><li id="skill-1">i have good knowledge in c/c++ programing</li></p>
+            <p><li id="skill-2">i have knowledge in java programing</li></p>
+            <p><li id="skill-3">i have knowledge in java programing</li></p>
+            <p><li id="skill-4">i have knowledge in java programing</li></p>
+            <p><li id="skill-5"></li></p>
+            <p><li id="skill-6"></li></p>
+            <p><li id="skill-7"></li></p>
+            <p><li id="skill-8"></li></p>
+            <p><li id="skill-9"></li></p>
+            <p><li id="skill-10"></li></p>
+        </div>
+        <div class="language">
+            <h1><li>LANGAUGE</li></h1>
+            <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">hindi</p>
+            <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">English</p>
+        </div>
+    </div>
+    <button class="btn" id="print"><a class="button">Print</a></button>
+    <script>
+        let Name=prompt("Enter your Name");
+        let Gmail =prompt("Enter your gmail","example@gmail.com");
+        let Address=prompt("Enter address");
+        let Summary=prompt("Add Summry");
+        let SchoolName =prompt("Enter Schoole Name");
+        let Marks=prompt("Enter Percentage in 10th");
+        let Year =prompt("Enter passing Year");
+        let BoarName=prompt("Enter Board Name:");
+        let CollegeName =prompt("Enter College Name");
+        let Marks1=prompt("Enter 12th Percentage");
+        let Year1 =prompt("Enter passing Year in 12th");
+        let BoarName1=prompt("Enter 12th Board Name:");
+        let Skill1 =prompt("Enter first skill");
+        let Skill2=prompt("Enter second skill");
+        let Skill3=prompt("Enter third skill");
+        let Skill4 =prompt("Enter fourth Skill");
+        let Skill5=prompt("Enter fifth Skill");
+        let Skill6=prompt("Enter six skill")
+        let Skill7=prompt("Enter seven skill");
+        let Skill8=prompt("Enter eight skill");
+        let Skill9 =prompt("Enter nine skill");
+        let Skill10=prompt("Enter ten skill");
+        document.getElementById("name").innerHTML =Name;
+        document.getElementById("gmail").innerHTML=Gmail;
+        document.getElementById("address").innerHTML=Address;
+        document.getElementById("sumary").innerHTML=Summary;
+        document.getElementById("schoolName").innerHTML=SchoolName;
+        document.getElementById("marks").innerHTML=Marks;
+        document.getElementById("year").innerHTML=Year;
+        document.getElementById("boardName").innerHTML=BoarName;
+        document.getElementById("collegeName").innerHTML=CollegeName;
+        document.getElementById("marks1").innerHTML=Marks1;
+        document.getElementById("year1").innerHTML=Year1;
+        document.getElementById("boardName1").innerHTML=BoarName1;
+        document.getElementById("skill-1").innerHTML=Skill1;
+        document.getElementById("skill-2").innerHTML=Skill2;
+        document.getElementById("skill-3").innerHTML=Skill3;
+        document.getElementById("skill-4").innerHTML=Skill4;
+        document.getElementById("skill-5").innerHTML=Skill5;
+        document.getElementById("skill-6").innerHTML=Skill6;
+        document.getElementById("skill-7").innerHTML=Skill7;
+        document.getElementById("skill-8").innerHTML=Skill8;
+        document.getElementById("skill-9").innerHTML=Skill9;
+        document.getElementById("skill-10").innerHTML=Skill10; 
+        let buttons = document.getElementById('print');
+        buttons.addEventListener('click',function(){
+            print();
+        }) 
+    </script> 
+</body>
+</html>
